@@ -1,0 +1,38 @@
+targets:
+  $default:
+    builders:
+      envied_generator|envied:
+        options:
+          path: ./.env
+          override: true
+      auto_route_generator:auto_route_generator: # this for @RoutePage
+        options:
+          enable_cached_builds: true
+        generate_for:
+          - lib/modules/jc_authentication/presentation/authentication/screen/**_screen.dart
+          - lib/modules/jc_authentication/presentation/credential_login/screen/**_screen.dart
+          - lib/modules/jc_authentication/presentation/pre_login/screen/**_screen.dart
+          - lib/modules/jc_authentication/presentation/selected_login/screen/**_screen.dart
+          - lib/examples/**_screen.dart
+          - lib/examples/example_scanner/**_screen.dart
+          - lib/examples/example_scanner/view/**_screen.dart
+          - lib/modules/jc_scanner/**_screen.dart
+          - lib/main.dart
+      auto_route_generator:auto_router_generator: # this for @AutoRouterConfig
+        options:
+          enable_cached_builds: true
+        generate_for:
+          - lib/core/configs/router/app_routes_micro.dart
+          - lib/core/configs/router/router_provider_micro.dart
+      json_serializable:
+        generate_for:
+          include:
+            - lib/core/configs/model/**.dart
+            - lib/core/configs/services/**.dart
+            - lib/core/configs/exceptions/**.dart
+            - lib/core/configs/utils/**.dart
+      freezed:
+        generate_for:
+          include:
+            - lib/core/configs/model/**.dart
+            - lib/core/configs/exceptions/**.dart
