@@ -11,19 +11,16 @@ class MicroAppRouter extends RootStackRouter {
   List<AutoRoute> get routes => [
         AutoRoute(
           page: AuthenticationScreenRoute.page,
-          initial: true,
         ),
         AutoRoute(
           page: ExampleHomeScreenRoute.page,
+          initial: true,
         ),
         AutoRoute(
           page: ExampleAuthenticationScreenRoute.page,
         ),
         AutoRoute(
           page: CredentialLoginScreenRoute.page,
-        ),
-        AutoRoute(
-          page: JcScannerScreenRoute.page,
         ),
         AutoRoute(
           page: ExampleCardEventsScreenRoute.page,
@@ -54,12 +51,6 @@ class MicroAppRouter extends RootStackRouter {
         ),
         AutoRoute(
           page: ExampleGoToPaymentScreenRoute.page,
-        ),
-        AutoRoute(
-          page: ExampleScannerScreenRoute.page,
-        ),
-        AutoRoute(
-          page: ExampleResultMessageScreenRoute.page,
         ),
         AutoRoute(
           page: ExampleCardTransferPointScreenRoute.page,

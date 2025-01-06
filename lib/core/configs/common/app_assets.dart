@@ -1,5 +1,5 @@
 enum JcImg {
-  bgLogin('packages/jc_module/assets/img/bg-login.png'),
+  bgLogin('assets/img/bg-login.png'),
   //bgLogin('assets/img/bg-login.png'),
   noImg('packages/jc_module/assets/img/no-img.png');
 

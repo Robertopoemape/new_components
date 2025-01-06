@@ -51,7 +51,7 @@ class ExampleHomeScreen extends StatelessWidget {
           children: [
             gap64,
             gap16,
-            JcButton(
+            /* JcButton(
               style: StyleButton.primary,
               label: 'Authentication user',
               onPressed: () {
@@ -60,7 +60,7 @@ class ExampleHomeScreen extends StatelessWidget {
                   const ExampleAuthenticationScreenRoute(),
                 );
               },
-            ),
+            ),*/
             gap16,
             JcButton(
               style: StyleButton.primary,
@@ -106,16 +106,6 @@ class ExampleHomeScreen extends StatelessWidget {
               },
             ),
             gap16,
-            JcButton(
-              style: StyleButton.primary,
-              label: 'Example Scanner',
-              onPressed: () {
-                autoRouterPush(
-                  context,
-                  const ExampleScannerScreenRoute(),
-                );
-              },
-            ),
             gap16,
             JcButton(
               style: StyleButton.primary,
