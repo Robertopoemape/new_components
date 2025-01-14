@@ -21,9 +21,10 @@ Future<void> jcPdfSalesByProduct({
   final currentDate = DateTime.now();
   final formattedDate = DateFormat('dd/MM/yyyy').format(currentDate);
   final ttf = pw.Font.ttf(
-      await _loadFont('packages/jc_module/assets/poppins/Poppins-Black.ttf'));
-  final svgImg = await rootBundle
-      .loadString('packages/jc_module/assets/svg/logo-claim.svg');
+    await _loadFont('packages/jc_module/assets/poppins/Poppins-Black.ttf'),
+  );
+  final svgImg =
+      await rootBundle.loadString('packages/jc_module/assets/svg/logo.svg');
 
   const maxRowsPerPageFirst = 14;
   const maxRowsPerPageOther = 18;
@@ -147,7 +148,7 @@ pw.Widget _buildFooter(String formattedDate, int pageIndex, int totalPages) {
 Future<void> _saveAndOpenPdf(pw.Document pdf, String eventId) async {
   final directory = await getTemporaryDirectory();
   final file = File(
-    '${directory.path}/joinnus-$eventId-${DateTime.now().microsecondsSinceEpoch}.pdf',
+    '${directory.path}/-$eventId-${DateTime.now().microsecondsSinceEpoch}.pdf',
   );
   await file.writeAsBytes(await pdf.save());
   final result = await OpenFile.open(file.path);

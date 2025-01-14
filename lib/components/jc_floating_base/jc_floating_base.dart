@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:jc_module/components/jc_floating_base/widgets/total_floating.dart';
 import 'package:jc_module/components/jc_floating_base/widgets/widgets.dart';
 import 'package:jc_module/core/configs/services/symbol_money.dart';
 

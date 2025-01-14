@@ -2,7 +2,7 @@ import 'dart:developer';
 
 import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
-import 'package:jc_module/components/components.dart';
+import 'package:jc_module/jc_module.dart';
 
 @RoutePage()
 class ExampleGoToPaymentScreen extends StatelessWidget {
@@ -13,13 +13,17 @@ class ExampleGoToPaymentScreen extends StatelessWidget {
     return Scaffold(
       body: Stack(
         children: [
-          const JcDetailProduct(),
+          JcDetailProduct(
+            imageUrl: JcImg.noImg.path,
+          ),
           Positioned(
             bottom: 0,
             left: 0,
             right: 0,
             child: JcFloatingBase.payment(
-              onPressedCancel: () async {},
+              onPressedCancel: () async {
+                Navigator.pop(context);
+              },
               onPressed: () async {
                 log('entro');
                 await Future.delayed(const Duration(seconds: 5), () {

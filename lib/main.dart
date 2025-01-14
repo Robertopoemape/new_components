@@ -49,18 +49,15 @@ class ExampleHomeScreen extends StatelessWidget {
         padding: padSy16,
         child: ListView(
           children: [
-            gap64,
-            gap16,
-            /* JcButton(
-              style: StyleButton.primary,
-              label: 'Authentication user',
-              onPressed: () {
-                autoRouterPush(
-                  context,
-                  const ExampleAuthenticationScreenRoute(),
-                );
-              },
-            ),*/
+            gap20,
+            Title(
+              color: Colors.black,
+              child: Text(
+                'Mis Componentes',
+                style: JcTextStyle.h6,
+                textAlign: TextAlign.center,
+              ),
+            ),
             gap16,
             JcButton(
               style: StyleButton.primary,
@@ -105,7 +102,6 @@ class ExampleHomeScreen extends StatelessWidget {
                 );
               },
             ),
-            gap16,
             gap16,
             JcButton(
               style: StyleButton.primary,

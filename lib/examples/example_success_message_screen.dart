@@ -65,7 +65,9 @@ class ExampleSuccessMessageScreen extends StatelessWidget {
                       onPressedScan: () {
                         showDialogMessageTransfer(
                           context,
-                          onPressedCancel: () {},
+                          onPressedCancel: () {
+                            Navigator.pop(context);
+                          },
                           onPressedConfirm: () {},
                           points: '',
                           userCode: '',
@@ -74,8 +76,7 @@ class ExampleSuccessMessageScreen extends StatelessWidget {
                         );
                       },
                       message: 'El código escaneado no '
-                          'existe y no fue emitido por la plataforma de Joinnus'
-                          ' o sus productos asociados.',
+                          'existe y no fue emitido por la plataforma',
                     ),
                   ),
                 ),

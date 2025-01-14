@@ -19,7 +19,7 @@ class _ButtonOptionMenuState extends State<ButtonOptionMenu> {
 
   @override
   void initState() {
-    _controller = ExpandedTileController(isExpanded: false);
+    _controller = ExpandedTileController();
     super.initState();
   }
 
@@ -51,12 +51,12 @@ class _ButtonOptionMenuState extends State<ButtonOptionMenu> {
       footerSeparator: 0,
       contentseparator: 0,
       theme: const ExpandedTileThemeData(
-        headerColor: JcColors.bgcblack,
+        headerColor: JcColors.succ500,
         headerPadding: padSyV12,
         headerSplashColor: Colors.transparent,
         footerPadding: EdgeInsets.zero,
         contentPadding: EdgeInsets.zero,
-        contentBackgroundColor: JcColors.bgcblack,
+        contentBackgroundColor: JcColors.succ500,
       ),
       content: Column(
         children: widget.menuOption.subOptionMenu

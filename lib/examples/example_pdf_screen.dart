@@ -119,7 +119,7 @@ class ExamplePdfScreenState extends State<ExamplePdfScreen> {
                                 event: 'Gochiso',
                                 reportDate: '29/09 al 10/10',
                                 reportHour: '9:00am a 10:00pm',
-                                cashierEmail: 'Cajero1@joinnus.com',
+                                cashierEmail: 'Cajero1@gmail.com',
                                 cashierNames: 'Juan Ortiz',
                                 organizer: 'Nombre del organizador',
                                 symbolMoney: SymbolMoney.sol,

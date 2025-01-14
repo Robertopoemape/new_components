@@ -38,11 +38,10 @@ class _JcCardOnlineState extends ConsumerState<JcCardOnline> {
       onPressed: widget.onPressed,
       child: Row(
         children: [
-          const Icon(
+          Icon(
             Icons.fiber_manual_record,
             size: 16,
-            color: JcColors.succ700, //remainingTime > 0 ?
-            //JcColors.succ700 : JcColors.err700,
+            color: widget.color,
           ),
           space6,
           Text(

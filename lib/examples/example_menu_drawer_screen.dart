@@ -10,14 +10,14 @@ class ExampleMenuDrawerScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: JcColors.sec800,
+        backgroundColor: JcColors.succ500,
         title: const Text('Example Menu Drawer'),
         actions: [
           JcCardOnline(
             name: 'Online',
-            color: JcColors.gsWhite,
+            color: JcColors.succ700,
             onPressed: () {},
-            backgroundColor: JcColors.sec800,
+            backgroundColor: JcColors.succ600,
           ),
         ],
       ),

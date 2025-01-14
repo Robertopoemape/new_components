@@ -1,19 +1,17 @@
 enum JcImg {
-  bgLogin('assets/img/bg-login.png'),
-  //bgLogin('assets/img/bg-login.png'),
-  noImg('packages/jc_module/assets/img/no-img.png');
+  bgLogin('assets/img/background.png'),
+  //bgLogin('assets/img/background.png'),
+  noImg('assets/img/no-img.png');
 
   const JcImg(this.path);
   final String path;
 }
 
 enum JcImgSvg {
-  baseLogo('packages/jc_module/assets/svg/base-logo.svg'),
-  //baseLogo('assets/svg/base-logo.svg'),
+  baseLogo('packages/jc_module/assets/svg/logo.svg'),
+  //baseLogo('assets/svg/logo.svg'),
   goEvent('packages/jc_module/assets/svg/go-event.svg'),
   //goEvent('assets/svg/go-event.svg'),
-  logoPower('packages/jc_module/assets/svg/logo-power.svg'),
-  //logoPower('assets/svg/logo-power.svg'),
   qrCamera('packages/jc_module/assets/svg/qr-camera.svg'),
   //qrCamera('assets/svg/qr-camera.svg'),
   titlePrimary('packages/jc_module/assets/svg/title-primary.svg'),
@@ -22,8 +20,8 @@ enum JcImgSvg {
   //titleSecondary('assets/svg/title-secondary.svg'),
   userPass('packages/jc_module/assets/svg/user-pass.svg'),
   //userPass('assets/svg/user-pass.svg'),
-  logoJoinnus('packages/jc_module/assets/svg/logo-joinnus.svg'),
-  //logoJoinnus('assets/svg/logo-joinnus.svg'),
+  logo('packages/jc_module/assets/svg/logo.svg'),
+  //logo('assets/svg/logo.svg'),
   rechargeReport('packages/jc_module/assets/svg/recharge-report.svg'),
   //rechargeReport('assets/svg/recharge-report.svg'),
   rechargeSeller('packages/jc_module/assets/svg/recharge-seller.svg'),

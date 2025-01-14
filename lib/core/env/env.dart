@@ -52,8 +52,4 @@ abstract class Env {
   @EnviedField(varName: 'KEY_JWT_PPR')
   static String keyJwtPpr = _Env.keyJwtPpr;
   // Global
-  @EnviedField(varName: 'X_JOINNUS_MOBILE_ENTRY_CONTROL')
-  static String xJoinnusMobileEntryCtrl = _Env.xJoinnusMobileEntryCtrl;
-  @EnviedField(varName: 'X_JOINNUS_MOBILE_CASHLESS')
-  static String xJoinnusMobileCashless = _Env.xJoinnusMobileCashless;
 }

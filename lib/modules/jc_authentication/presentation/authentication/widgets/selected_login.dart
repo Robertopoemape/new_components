@@ -187,7 +187,7 @@ class SelectedLogin extends StatelessWidget {
                   onTap: () => launchUrl(
                     Uri(
                       scheme: 'https',
-                      host: 'www.joinnus.com',
+                      host: 'https://robertopoemape.github.io/home.html',
                     ),
                   ),
                   child: SizedBox(
@@ -216,13 +216,13 @@ class SelectedLogin extends StatelessWidget {
                 const Spacer(),
                 Center(
                   child: SvgPicture.asset(
-                    JcImgSvg.logoPower.path,
+                    JcImgSvg.logo.path,
                   ),
                 ),
                 gap12,
                 Center(
                   child: Text(
-                    'Versión 2.0',
+                    'Versión 1.0',
                     style: JcTextStyle.body2.w500.gs700,
                   ),
                 ),

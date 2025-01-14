@@ -1,6 +1,6 @@
 import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
-import 'package:jc_module/components/components.dart';
+import 'package:jc_module/jc_module.dart';
 
 @RoutePage()
 class ExampleResumenGoToPaymentScreen extends StatelessWidget {
@@ -11,7 +11,9 @@ class ExampleResumenGoToPaymentScreen extends StatelessWidget {
     return Scaffold(
       body: Stack(
         children: [
-          const JcDetailProduct(),
+          JcDetailProduct(
+            imageUrl: JcImg.noImg.path,
+          ),
           Positioned(
             bottom: 0,
             left: 0,

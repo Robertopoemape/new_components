@@ -17,7 +17,7 @@ class VersionCard extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           SvgPicture.asset(
-            JcImgSvg.logoPower.path,
+            JcImgSvg.logo.path,
           ),
           space8,
           Text(

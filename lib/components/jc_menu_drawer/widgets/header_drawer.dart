@@ -33,16 +33,16 @@ class HeaderDrawer extends StatelessWidget {
         const Spacer(),
         if (isOnline!) ...[
           JcCardOnline(
-            backgroundColor: Colors.transparent,
+            backgroundColor: JcColors.succ600,
             name: 'Online',
-            color: JcColors.succ600,
+            color: JcColors.succ700,
             onPressed: () {},
           ),
         ] else
           JcCardOnline(
-            backgroundColor: Colors.transparent,
+            backgroundColor: JcColors.succ600,
             name: 'Offline',
-            color: JcColors.succ600,
+            color: JcColors.succ700,
             onPressed: () {},
           ),
       ],

@@ -14,7 +14,7 @@ class JcMenuDrawer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ColoredBox(
-      color: JcColors.bgcblack,
+      color: JcColors.succ500,
       child: SafeArea(
         child: Padding(
           padding: padSy16.copyWith(
@@ -42,7 +42,7 @@ class JcMenuDrawer extends StatelessWidget {
                 onPressed: onPressed!,
               ),
               gap8,
-              const VersionCard(version: 'Versión 2.0'),
+              const VersionCard(version: 'Versión 1.0'),
             ],
           ),
         ),

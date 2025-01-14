@@ -19,7 +19,7 @@ class SplashLogin extends StatelessWidget {
           if (!isControlQr) ...[
             Center(
               child: Text(
-                'Qr cashless',
+                'Titulo',
                 style: JcTextStyle.h4.w800.gsWhite,
               ),
             ),
@@ -28,7 +28,7 @@ class SplashLogin extends StatelessWidget {
               child: Padding(
                 padding: padSy16,
                 child: SvgPicture.asset(
-                  JcImgSvg.logoJoinnus.path,
+                  JcImgSvg.logo.path,
                 ),
               ),
             ),

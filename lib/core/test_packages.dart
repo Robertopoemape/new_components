@@ -8,7 +8,7 @@ class TestPackages extends StatelessWidget {
   Widget build(BuildContext context) {
     return SizedBox(
       child: SvgPicture.asset(
-        'packages/jc_config/assets/svg/logo-joinnus.svg',
+        'packages/jc_config/assets/svg/logo.svg',
         width: 100,
         height: 100,
       ),

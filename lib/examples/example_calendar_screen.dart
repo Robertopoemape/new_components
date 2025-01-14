@@ -27,7 +27,7 @@ class _ExampleCalendarScreenState extends State<ExampleCalendarScreen> {
         actions: [
           JcCardOnline(
             name: 'Online',
-            color: JcColors.pri1000,
+            color: JcColors.succ700,
             onPressed: () {},
             backgroundColor: JcColors.pri1000,
           ),
@@ -43,18 +43,14 @@ class _ExampleCalendarScreenState extends State<ExampleCalendarScreen> {
                   log(value.toString());
                 },
               ),
-              JcHour(
+              const JcHour(
                 title: 'Hora inicio',
-                selectedTime: (value) {
-                  log(value.toString());
-                },
+                selectedTime: log,
               ),
               gap24,
-              JcHour(
+              const JcHour(
                 title: 'Hora fin',
-                selectedTime: (value) {
-                  log(value.toString());
-                },
+                selectedTime: log,
                 isEndOfDay: true,
               ),
             ],

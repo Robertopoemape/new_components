@@ -17,7 +17,6 @@ class Api {
     _headerDefault = {
       'Content-Type': 'application/json',
       'Accept': 'application/json',
-      'x-joinnus-mobile': Env.xJoinnusMobileEntryCtrl,
     };
     return _instance;
   }
@@ -26,7 +25,6 @@ class Api {
     _headerDefault = {
       'Content-Type': 'application/json',
       'Accept': 'application/json',
-      'x-joinnus-mobile': Env.xJoinnusMobileCashless,
     };
     return _instance;
   }
