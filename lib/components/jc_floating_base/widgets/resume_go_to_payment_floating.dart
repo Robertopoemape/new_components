@@ -8,7 +8,7 @@ class ResumeGoToPaymentFloating extends StatelessWidget {
     required this.onPressedViewResume,
     required this.labelTotal,
     required this.labelCount,
-    this.symbolMoney = SymbolMoney.point,
+    this.symbolMoney = SymbolMoney.sol,
     this.labelButton = 'Ir a cobrar',
     super.key,
   });

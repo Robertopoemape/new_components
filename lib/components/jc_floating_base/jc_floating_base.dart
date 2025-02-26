@@ -25,7 +25,7 @@ class JcFloatingBase extends StatelessWidget {
     required VoidCallback onPressed,
     required String labelTotal,
     required String labelCount,
-    SymbolMoney symbolMoney = SymbolMoney.point,
+    SymbolMoney symbolMoney = SymbolMoney.sol,
   }) {
     return JcFloatingBase._(
       child: GoToPaymentFloating(
@@ -42,7 +42,7 @@ class JcFloatingBase extends StatelessWidget {
     required VoidCallback onPressedViewResume,
     required String labelTotal,
     required String labelCount,
-    SymbolMoney symbolMoney = SymbolMoney.point,
+    SymbolMoney symbolMoney = SymbolMoney.sol,
   }) {
     return JcFloatingBase._(
       child: ResumeGoToPaymentFloating(

@@ -7,7 +7,7 @@ class GoToPaymentFloating extends StatelessWidget {
     required this.onPressed,
     required this.labelTotal,
     required this.labelCount,
-    this.symbolMoney = SymbolMoney.point,
+    this.symbolMoney = SymbolMoney.sol,
     this.labelButton = 'Ir a cobrar',
     super.key,
   });

@@ -7,7 +7,7 @@ class DownloadReportPrimary extends StatelessWidget {
     required this.onPressed,
     this.labelButton = 'Cerrar',
     this.total = 0,
-    this.symbolMoney = SymbolMoney.point,
+    this.symbolMoney = SymbolMoney.sol,
     super.key,
   });
   final String? labelButton;

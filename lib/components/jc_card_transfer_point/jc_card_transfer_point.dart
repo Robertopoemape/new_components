@@ -8,7 +8,7 @@ class JcCardTransferPoint extends StatelessWidget {
     this.code = '',
     this.points = '',
     this.onPressedCamera,
-    this.symbolMoney = SymbolMoney.point,
+    this.symbolMoney = SymbolMoney.sol,
     super.key,
   });
   final String title;

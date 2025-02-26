@@ -47,7 +47,9 @@ class ExampleConfirmPaymentPointScreen extends StatelessWidget {
       ),
     ];
     return Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar(
+        backgroundColor: Colors.white10,
+      ),
       body: Stack(
         children: [
           Center(

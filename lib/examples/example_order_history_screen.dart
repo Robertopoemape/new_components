@@ -159,7 +159,12 @@ class ExampleOrderHistoryScreenState extends State<ExampleOrderHistoryScreen> {
     return Scaffold(
       backgroundColor: JcColors.gs200,
       appBar: AppBar(
-        backgroundColor: JcColors.sec600,
+        backgroundColor: JcColors.gs200,
+        title: Text(
+          'Lista y busca',
+          style: JcTextStyle.h6,
+        ),
+        centerTitle: true,
       ),
       body: Column(
         children: [

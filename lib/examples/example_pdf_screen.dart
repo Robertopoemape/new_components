@@ -177,7 +177,7 @@ class ExamplePdfScreenState extends State<ExamplePdfScreen> {
                                 reportDate: '29/09 al 10/10',
                                 reportHour: '9:00am a 10:00pm',
                                 organizer: 'Nombre del organizador',
-                                symbolMoney: SymbolMoney.point,
+                                symbolMoney: SymbolMoney.sol,
                               );
                             },
                           ),

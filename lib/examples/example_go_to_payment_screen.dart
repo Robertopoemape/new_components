@@ -20,10 +20,9 @@ class ExampleGoToPaymentScreen extends StatelessWidget {
             bottom: 0,
             left: 0,
             right: 0,
-            child: JcFloatingBase.payment(
-              onPressedCancel: () async {
-                Navigator.pop(context);
-              },
+            child: JcFloatingBase.goToPayment(
+              labelTotal: '2',
+              labelCount: '2',
               onPressed: () async {
                 log('entro');
                 await Future.delayed(const Duration(seconds: 5), () {

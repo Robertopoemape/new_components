@@ -10,7 +10,7 @@ class JcDetailProduct extends StatefulWidget {
         'Chilewrewrewres, Especias, Tortillas de maíz, '
         'Cebolla, Cilantro, Piña, Limón, Salsa.',
     this.price = '10.00',
-    this.symbol = SymbolMoney.point,
+    this.symbol = SymbolMoney.sol,
     this.imageUrl,
     super.key,
   });

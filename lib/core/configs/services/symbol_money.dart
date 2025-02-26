@@ -1,7 +1,6 @@
 enum SymbolMoney {
   usd(r'$ '),
-  sol('S/ '),
-  point('ptos');
+  sol('S/ ');
 
   const SymbolMoney(this.symbol);
   final String symbol;
